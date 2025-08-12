@@ -1,5 +1,6 @@
 ## classDAO — NFT-Based Decentralized Autonomous Organization
 <br>
+
 **classDAO** is a decentralized governance platform designed for classes, student groups, or organizations, where each member holds a unique NFT that represents their membership. Only NFT holders can propose and vote on decisions, ensuring secure, transparent, and exclusive governance.
 
 ## 🌍 What is a DAO?
