@@ -71,7 +71,6 @@ frontend/         # React.js frontend for interacting with contracts
 
 ## 👨‍💻 Contributors
 <br>
-
 ## Amaddin Majid (Lead Developer)
 
 ## 📜 License
