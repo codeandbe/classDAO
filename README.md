@@ -5,16 +5,19 @@
 
 ## 🌍 What is a DAO?
 <br>
+
 A Decentralized Autonomous Organization (DAO) is a blockchain-powered entity that operates without centralized control. Decisions are made collectively by members, with rules and operations enforced by smart contracts.
 
 Key DAO characteristics:
 <br>
+
 - Decentralized: No single authority; all members have voting rights.
 - Autonomous: Smart contracts automatically execute decisions.
 - Transparent: All transactions and votes are publicly visible.
   
 ## 🚀 Key Features of classDAO
 <br>
+
 **NFT Membership:** Each member holds a unique NFT granting governance rights.
 **On-Chain Governance:** Members submit proposals and vote directly on the blockchain.
 **Smart Contract Automation:** Voting results are executed without manual intervention.
@@ -23,6 +26,7 @@ Key DAO characteristics:
 
 ## 🔧 Contract Architecture
 <br>
+
 Several key smart contracts were built for classDAO to ensure decentralized governance and membership control:
 **1. Governance Contract**
 This contract manages the decision-making process, proposal submissions, voting, and execution. Its key features include:
@@ -37,6 +41,7 @@ Voting Access: Without the NFT, a wallet address cannot participate in governanc
 
 ## 🛠 Technology Stack
 <br>
+
 - Blockchain: Ethereum (Testnet Deployment)
 - Smart Contracts: Solidity
 - Frameworks & Tools: Hardhat, Remix IDE, Ethers.js, Web3.js, Mocha-Chai for testing
@@ -53,6 +58,24 @@ scripts/          # TypeScript deployment scripts
 tests/            # Unit tests with Mocha-Chai
 frontend/         # React.js frontend for interacting with contracts
 ```
+
+## 📖 Usage
+- Deploy Contracts: Via Hardhat or Remix deployment scripts.
+- Mint NFT Memberships: Grant DAO access to members.
+- Submit Proposals: NFT holders can propose governance changes.
+- Vote & Execute: On-chain voting ensures decentralized decision-making.
+
+📌 Live Demo
+**Governance Dashboard:** Tally DAO Interface - https://www.tally.xyz/gov/vuna-exec-dao
+**GitHub Repo:** classDAO - https://github.com/PappyZero/classDAO
+
+## 👨‍💻 Contributors
+<br>
+
+## Amaddin Majid (Lead Developer)
+
+## 📜 License
+MIT License — see LICENSE file for details.
 
 ## REMIX DEFAULT WORKSPACE
 When using the Remix IDE to work on classDAO’s smart contracts, the default workspace provides essential directories and files to streamline development:
