@@ -1,92 +1,258 @@
-## classDAO — NFT-Based Decentralized Autonomous Organization
-<br>
+# classDAO
 
-**classDAO** is a decentralized governance platform designed for classes, student groups, or organizations, where each member holds a unique NFT that represents their membership. Only NFT holders can propose and vote on decisions, ensuring secure, transparent, and exclusive governance.
+## NFT-Based DAO Governance Platform
 
-## 🌍 What is a DAO?
-<br>
+![classDAO](screenshots/cover.png)
 
-A Decentralized Autonomous Organization (DAO) is a blockchain-powered entity that operates without centralized control. Decisions are made collectively by members, with rules and operations enforced by smart contracts.
+classDAO is a decentralized autonomous organization (DAO) platform that uses ERC-721 NFT memberships to manage governance rights. Members receive unique NFT tokens that grant access to proposal creation, voting, delegation, and participation in organizational decision-making.
 
-Key DAO characteristics:
-<br>
+The project demonstrates practical implementation of decentralized governance using Solidity smart contracts, NFT-based membership, and on-chain voting mechanisms deployed on Ethereum-compatible networks.
 
-- Decentralized: No single authority; all members have voting rights.
-- Autonomous: Smart contracts automatically execute decisions.
-- Transparent: All transactions and votes are publicly visible.
-  
-## 🚀 Key Features of classDAO
-<br>
+---
 
-**NFT Membership:** Each member holds a unique NFT granting governance rights.
-**On-Chain Governance:** Members submit proposals and vote directly on the blockchain.
-**Smart Contract Automation:** Voting results are executed without manual intervention.
-**Whitelisted Access:** Only NFT holders can interact with governance contracts.
-**Transparency & Security:** Immutable records ensure trust among members.
+## Live Governance Dashboard
 
-## 🔧 Contract Architecture
-<br>
+**Tally DAO Interface**
 
-Several key smart contracts were built for classDAO to ensure decentralized governance and membership control:
-**1. Governance Contract**
-This contract manages the decision-making process, proposal submissions, voting, and execution. Its key features include:
-Proposal Submission: Only NFT-holding members can submit proposals.
-Voting Mechanism: One NFT equals one vote, ensuring fairness and transparency.
-Execution of Proposals: Once consensus is reached, proposals are automatically executed by the contract.
-**2. Membership Contract (NFT)**
-This contract mints an NFT for each DAO member, representing their membership. Key features include:
-NFT Minting: Each member receives a unique NFT minted to their wallet upon joining.
-Whitelisting Mechanism: Only wallets holding the classDAO NFT are allowed to interact with the governance contract, ensuring that only verified members can vote.
-Voting Access: Without the NFT, a wallet address cannot participate in governance activities, safeguarding exclusive membership participation.
+https://www.tally.xyz/gov/vuna-exec-dao
 
-## 🛠 Technology Stack
-<br>
+---
 
-- Blockchain: Ethereum (Testnet Deployment)
-- Smart Contracts: Solidity
-- Frameworks & Tools: Hardhat, Remix IDE, Ethers.js, Web3.js, Mocha-Chai for testing
-- Storage: IPFS for metadata
-- Frontend: React.js with Ethers.js integration
+## Project Overview
 
-## 📂 Project Structure
-<br>
+Traditional organizations rely on centralized leadership and manual voting processes.
 
-bash
+classDAO introduces a decentralized governance model where:
+
+* Membership is represented by NFTs
+* Governance rights are controlled by smart contracts
+* Proposals are submitted and voted on-chain
+* Voting results are transparent and immutable
+* Delegation allows members to assign voting power
+* Treasury decisions can be governed collectively
+
+---
+
+## Key Features
+
+### NFT Membership
+
+* ERC-721 membership tokens
+* One NFT per member
+* Wallet-based identity verification
+* Governance participation restricted to NFT holders
+
+### Governance System
+
+* Proposal creation
+* Proposal voting
+* Vote tracking
+* Proposal execution
+* Community-driven decision making
+
+### Delegate Management
+
+* Delegate registration
+* Voting power delegation
+* Delegate leaderboards
+* Community representation
+
+### Treasury Governance
+
+* Treasury oversight
+* Community-controlled governance
+* On-chain transparency
+
+### Transparency
+
+* Immutable blockchain records
+* Public proposal history
+* Public voting records
+* Verifiable governance actions
+
+---
+
+## Technologies Used
+
+### Blockchain
+
+* Ethereum
+* Base Sepolia
+
+### Smart Contracts
+
+* Solidity
+* OpenZeppelin
+
+### Development Tools
+
+* Hardhat
+* Remix IDE
+* Ethers.js
+* Web3.js
+
+### Frontend
+
+* React.js
+* Ethers.js
+
+### Storage
+
+* IPFS
+
+### Governance
+
+* Tally
+
+---
+
+## Smart Contract Architecture
+
+### Governance Contract
+
+Responsible for:
+
+* Proposal creation
+* Proposal management
+* Voting
+* Proposal execution
+
+### Membership NFT Contract
+
+Responsible for:
+
+* NFT minting
+* Membership verification
+* Governance access control
+
+---
+
+## Smart Contracts
+
+### Network
+
+Base Sepolia
+
+### Governor Contract
+
+```text
+0x323A2623f619a4846365Bd843F0bb854046426ee
 ```
-contracts/        # Smart contracts (Governance, Membership NFT, Lock)
-scripts/          # TypeScript deployment scripts
-tests/            # Unit tests with Mocha-Chai
-frontend/         # React.js frontend for interacting with contracts
+
+### Membership Token Contract
+
+```text
+0xb491986Ec0BEcDc55deB6937073AD7a213D706A9
 ```
 
-## 📖 Usage
-- Deploy Contracts: Via Hardhat or Remix deployment scripts.
-- Mint NFT Memberships: Grant DAO access to members.
-- Submit Proposals: NFT holders can propose governance changes.
-- Vote & Execute: On-chain voting ensures decentralized decision-making.
+---
 
-📌 Live Demo
-**Governance Dashboard:** Tally DAO Interface - https://www.tally.xyz/gov/vuna-exec-dao
-**GitHub Repo:** classDAO - https://github.com/PappyZero/classDAO
+## Screenshots
 
-## 👨‍💻 Contributors
-<br>
-Amaddin Majid (Lead Developer)
+### DAO Overview
 
-## 📜 License
-MIT License — see LICENSE file for details.
+![Governance Overview](screenshots/governance-overview.png)
 
-## REMIX DEFAULT WORKSPACE
-When using the Remix IDE to work on classDAO’s smart contracts, the default workspace provides essential directories and files to streamline development:
+### Proposal Voting System
 
-**contracts:** Holds three smart contracts with increasing levels of complexity.
-**scripts:** Contains four TypeScript files to deploy contracts using web3.js or ethers.js libraries.
-**tests:** Includes Mocha-Chai unit tests for the contracts, allowing for comprehensive testing and debugging.
+![Proposal Voting](screenshots/proposal-voting.png)
 
-## SCRIPTS
-The scripts folder contains TypeScript files that deploy the "Storage" contract. To deploy other contracts, simply update the contract's name in the script (e.g., deploy_with_ethers.ts or deploy_with_web3.ts) and provide the necessary constructor arguments.
+### Delegate Management
 
-To run a script:
+![Delegate System](screenshots/delegate-system.png)
 
-Right-click on the file in the File Explorer and select "Run."
-Ensure the Solidity file is already compiled, as the output from the script will appear in the Remix terminal.
+### Treasury Governance
+
+![Treasury](screenshots/treasury.png)
+
+### Contract Configuration
+
+![Contracts and Parameters](screenshots/contracts-and-parameters.png)
+
+---
+
+## Governance Workflow
+
+1. Mint Membership NFT
+2. Join DAO
+3. Create Proposal
+4. Community Voting
+5. Proposal Approval
+6. Smart Contract Execution
+
+---
+
+## Project Structure
+
+```text
+classDAO/
+├── contracts/
+│   ├── Governance.sol
+│   ├── MembershipNFT.sol
+│   └── Lock.sol
+│
+├── scripts/
+│   ├── deploy_with_ethers.ts
+│   └── deploy_with_web3.ts
+│
+├── tests/
+│   └── governance.test.js
+│
+├── frontend/
+│   └── React Application
+│
+└── README.md
+```
+
+---
+
+## Skills Demonstrated
+
+* Smart Contract Development
+* Solidity Programming
+* ERC-721 Token Development
+* DAO Architecture
+* Governance Design
+* Blockchain Security Concepts
+* NFT Membership Systems
+* Ethereum Development
+* Hardhat Deployment
+* OpenZeppelin Integration
+* Decentralized Voting Systems
+* Web3 Application Development
+
+---
+
+## Use Cases
+
+* Student Organizations
+* University Clubs
+* Community Governance
+* Investment Clubs
+* Startup Governance
+* Membership Organizations
+* Decentralized Communities
+
+---
+
+## Repository Purpose
+
+This repository serves as a portfolio project demonstrating practical experience building decentralized governance systems using NFT-based membership, smart contracts, and blockchain voting mechanisms.
+
+---
+
+## Contributors
+
+### Iyobosa Amaddin
+
+GitHub: https://github.com/codeandbe
+
+### Oke Emmanuel Olamide
+
+GitHub: https://github.com/ManuelHills
+
+---
+
+## License
+
+MIT License
